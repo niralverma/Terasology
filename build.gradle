@@ -238,7 +238,7 @@ project(":modules").subprojects.forEach { proj ->
 }
 
 /**
- * Gathering remote modules files from remoteRepo to 'modules' for autoloading in game-time (tasks server, game etc)
+ * Gathering remote modules files from remoteRepo to 'modules/' for auto-loading in game-time (tasks server, game etc)
  */
 class RemoteModuleGatherer implements DependencyResolutionListener {
 
@@ -258,8 +258,8 @@ class RemoteModuleGatherer implements DependencyResolutionListener {
     @Override
     void afterResolve(ResolvableDependencies dependencies) {
         // We process only module dependencies
-        if (dependencies.path.startsWith(":modules:") &&
-                dependencies.name == "compileClasspath") {
+        if (dependencies.path.startsWith(":modules:")
+                && dependencies.name in ["compileClasspath", "runtimeClasspath"]) {
             def projectName = dependencies.path.split(":")[2]
 
             if (!dependencies.artifacts.artifacts.empty) {
