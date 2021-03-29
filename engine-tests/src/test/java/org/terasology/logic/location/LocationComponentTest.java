@@ -6,7 +6,6 @@ import org.joml.Math;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.terasology.engine.TerasologyTestingEnvironment;
 import org.terasology.engine.entitySystem.entity.EntityRef;
@@ -21,7 +20,6 @@ import static org.terasology.joml.test.VectorAssert.assertEquals;
 
 /**
  */
-@Tag("TteTest")
 public class LocationComponentTest extends TerasologyTestingEnvironment {
 
     LocationComponent loc;

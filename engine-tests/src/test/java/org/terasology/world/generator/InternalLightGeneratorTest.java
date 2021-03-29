@@ -5,7 +5,6 @@ package org.terasology.engine.world.generator;
 import org.joml.Vector3i;
 import org.joml.Vector3ic;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.terasology.engine.TerasologyTestingEnvironment;
 import org.terasology.assets.ResourceUrn;
@@ -30,7 +29,6 @@ import org.terasology.engine.world.propagation.light.InternalLightProcessor;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Tag("TteTest")
 public class InternalLightGeneratorTest extends TerasologyTestingEnvironment {
 
     Block airBlock;

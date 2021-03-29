@@ -4,7 +4,6 @@ package org.terasology.world;
 
 import org.joml.Vector3i;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.terasology.engine.TerasologyTestingEnvironment;
 import org.terasology.assets.ResourceUrn;
@@ -31,7 +30,6 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Tag("TteTest")
 public class ChunkViewTest extends TerasologyTestingEnvironment {
 
     Block airBlock;

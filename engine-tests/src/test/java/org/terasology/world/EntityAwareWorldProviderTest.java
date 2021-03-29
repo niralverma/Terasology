@@ -20,7 +20,6 @@ import com.google.common.collect.Lists;
 import org.joml.Vector3i;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.terasology.engine.TerasologyTestingEnvironment;
 import org.terasology.assets.ResourceUrn;
@@ -66,7 +65,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Tag("TteTest")
 public class EntityAwareWorldProviderTest extends TerasologyTestingEnvironment {
 
     private EntityAwareWorldProvider worldProvider;

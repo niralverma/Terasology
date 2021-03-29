@@ -16,7 +16,6 @@
 package org.terasology.engine.logic.console;
 
 
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.terasology.engine.TerasologyTestingEnvironment;
 
@@ -27,7 +26,6 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Tag("TteTest")
 public class ConsoleTest extends TerasologyTestingEnvironment {
 
     private final String MESSAGE_TEXT = "Test message";
